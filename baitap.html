@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Phone Simulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .mobile {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="mobile" id="nokia">
+  <h2>Điện thoại Nokia</h2>
+  <button onclick="togglePower('nokia')">Bật/Tắt</button>
+  <button onclick="composeMessage('nokia')">Soạn tin</button>
+  <button onclick="sendMessage('nokia', 'iphone')">Gửi tin cho iPhone</button>
+  <button onclick="checkInbox('iphone')">Kiểm tra inbox iPhone</button>
+  <p>Trạng thái pin: <span id="nokia-battery">100</span></p>
+  <p>Trạng thái: <span id="nokia-status">Tắt</span></p>
+</div>
+
+<div class="mobile" id="iphone">
+  <h2>Điện thoại iPhone</h2>
+  <button onclick="togglePower('iphone')">Bật/Tắt</button>
+  <button onclick="checkInbox('iphone')">Xem tin trong inbox</button>
+  <p>Trạng thái pin: <span id="iphone-battery">100</span></p>
+  <p>Trạng thái: <span id="iphone-status">Tắt</span></p>
+</div>
+
+<script src="baitap.js"></script>
+
+</body>
+</html>
